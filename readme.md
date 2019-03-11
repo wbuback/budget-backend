@@ -12,3 +12,5 @@ Faça um clone ou fork do projeto e execute os seguintes comandos na raiz:
 - node
 - express
 - mongodb
+
+Ao finalizar a contribuição faça uma pull-request.
