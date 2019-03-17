@@ -2,15 +2,22 @@ const mongoose = require('mongoose');
 const mongoosePaginate = require('mongoose-paginate');
 
 const CustomerSchema = new mongoose.Schema({
-    name: {
+    nomeEmpresa: {
         type: String,
         required: true,
     },
-    person: {
+    nomeResponsavel: {
         type: String,
         required: true,
     },
     email: {
+        type: String,
+        required: true,
+        trim: true,
+        unique: true,
+        match: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+    },
+    telefone: {
         type: String,
         required: true,
     },
